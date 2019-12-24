@@ -22,5 +22,7 @@
     "postversion": "git push --follow-tags"
   },
   "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "semistandard": "^14.2.0"
+  }
 }
