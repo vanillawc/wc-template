@@ -42,7 +42,6 @@ class WCTemplate extends HTMLElement {
 
   constructor () {
     super();
-    this.attachShadow({ mode: 'open' });
     this.__initialized = false;
     this.__template = '';
     this.__context = {};
@@ -84,7 +83,7 @@ class WCTemplate extends HTMLElement {
   }
 
   render () {
-    this.shadowRoot.innerHTML = interpolate(this.__template, this.__context);
+    this.innerHTML = interpolate(this.__template, this.__context);
   }
 }
 
