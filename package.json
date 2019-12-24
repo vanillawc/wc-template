@@ -1,0 +1,26 @@
+{
+  "name": "@vanillawc/wc-template",
+  "version": "0.0.0",
+  "license": "MIT",
+  "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
+  "description": "Template HTML with tagged template literals",
+  "keywords": [
+    "web-components",
+    "vanilla",
+    "tagged",
+    "template",
+    "literal"
+  ],
+  "repository": "https://github.com/vanillawc/wc-template/",
+  "main": "src/wc-template.js",
+  "scripts": {
+    "start": "npx live-server --no-browser --open=dev",
+    "lint": "semistandard",
+    "build": "npx rollup --config .config/rollup.config.js ",
+    "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
+    "preversion": "npm run lint",
+    "postversion": "git push --follow-tags"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
