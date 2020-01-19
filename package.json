@@ -14,7 +14,7 @@
   "repository": "https://github.com/vanillawc/wc-template/",
   "main": "src/wc-template.js",
   "scripts": {
-    "start": "npx live-server --no-browser --open=dev",
+    "start": "npx live-server --no-browser --port=5500 --open=dev",
     "lint": "semistandard",
     "build": "npx rollup --config .config/rollup.config.js ",
     "package": "npx rimraf package && npm pack | tail -n 1 | xargs tar -xf",
