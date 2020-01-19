@@ -33,8 +33,6 @@ Then import the `index.js` file at the root of the package.
 <wc-template src="sample.html"></wc-template>
 ```
 
-***Demo: [Basic Usage - Demo][]***
-
 ## Context
 
 If the template is a tagged template literal, context can be provided via an external endpoint.
@@ -43,7 +41,6 @@ If the template is a tagged template literal, context can be provided via an ext
 <wc-template src="sample2.html" theme="assets/context.json"></wc-template>
 ```
 
-***Demo: [Basic Usage - 'context' Attribute][]***
+## Demo
 
-[Basic Usage - Demo]: https://vanillawc.github.io/wc-template/demo/basic-usage.html
-[Basic Usage - 'context' Attribute]: https://vanillawc.github.io/wc-template/demo/context-attribute.html
+### [WC-Template-Demo - WebComponents.dev](https://webcomponents.dev/edit/BggRSZ5D4tmsyce94mpB?sv=1&pm=1)
