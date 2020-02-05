@@ -12,7 +12,7 @@
     "literal"
   ],
   "repository": "https://github.com/vanillawc/wc-template/",
-  "main": "src/wc-template.js",
+  "main": "index.js",
   "scripts": {
     "start": "npx live-server --no-browser --port=5500 --open=dev",
     "lint": "semistandard",
