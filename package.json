@@ -2,7 +2,7 @@
   "name": "@vanillawc/wc-template",
   "version": "1.0.7",
   "license": "MIT",
-  "author": "Evan Plaice <evanplaice@gmail.com> (http://evanplaice.com/)",
+  "author": "Evan Plaice <evanplaice@gmail.com> (https://evanplaice.com/)",
   "description": "Template HTML with tagged template literals",
   "keywords": [
     "web-components",
