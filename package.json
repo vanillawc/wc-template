@@ -1,6 +1,6 @@
 {
   "name": "@vanillawc/wc-template",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "license": "MIT",
   "author": "Evan Plaice <evanplaice@gmail.com> (https://evanplaice.com/)",
   "description": "Template HTML with tagged template literals",
