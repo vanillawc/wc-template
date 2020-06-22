@@ -1,77 +1,77 @@
 /* eslint no-undef: 0 */
-import Interpolate from '../node_modules/@vanillaes/interpolate/index.js';
+import Interpolate from '../node_modules/@vanillaes/interpolate/index.js'
 
 export class WCTemplate extends HTMLElement {
   static get observedAttributes () {
-    return ['src', 'context'];
+    return ['src', 'context']
   }
 
   attributeChangedCallback (name, oldValue, newValue) {
-    if (!this.__initialized) { return; }
+    if (!this.__initialized) { return }
     if (oldValue !== newValue) {
-      this[name] = newValue;
+      this[name] = newValue
     }
   }
 
-  get src () { return this.getAttribute('src'); }
+  get src () { return this.getAttribute('src') }
   set src (value) {
-    this.setAttribute('src', value);
-    this.setSrc();
-    this.render();
+    this.setAttribute('src', value)
+    this.setSrc()
+    this.render()
   }
 
-  get context () { return this.getAttribute('context'); }
+  get context () { return this.getAttribute('context') }
   set context (value) {
-    this.setAttribute('context', value);
-    this.setContext();
-    this.render();
+    this.setAttribute('context', value)
+    this.setContext()
+    this.render()
   }
 
   constructor () {
-    super();
-    this.__initialized = false;
-    this.__template = '';
-    this.__context = {};
+    super()
+    this.__initialized = false
+    this.__template = ''
+    this.__context = {}
   }
 
   async connectedCallback () {
     if (this.hasAttribute('src')) {
-      await this.setSrc();
+      await this.setSrc()
     }
 
     if (this.hasAttribute('context')) {
-      await this.setContext();
+      await this.setContext()
     }
 
-    this.render();
-    this.__initialized = true;
+    this.render()
+    this.__initialized = true
   }
 
   async setSrc () {
-    const path = this.getAttribute('src');
-    this.__template = await this.fetchSrc(path);
+    const path = this.getAttribute('src')
+    this.__template = await this.fetchSrc(path)
   }
 
   async fetchSrc (src) {
-    const response = await fetch(src);
-    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`);
-    return response.text();
+    const response = await fetch(src)
+    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`)
+    return response.text()
   }
 
   async setContext () {
-    const path = this.getAttribute('context');
-    this.__context = await this.fetchContext(path);
+    const path = this.getAttribute('context')
+    this.__context = await this.fetchContext(path)
   }
 
   async fetchContext (src) {
-    const response = await fetch(src);
-    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`);
-    return response.json();
+    const response = await fetch(src)
+    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`)
+    return response.json()
   }
 
   render () {
-    this.innerHTML = Interpolate(this.__template, this.__context);
+    this.innerHTML = Interpolate(this.__template, this.__context)
   }
 }
 
-customElements.define('wc-template', WCTemplate);
+customElements.define('wc-template', WCTemplate)

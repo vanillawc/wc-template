@@ -37,24 +37,24 @@ class TemplateException extends Error {
 
 class WCTemplate extends HTMLElement {
   static get observedAttributes () {
-    return ['src', 'context'];
+    return ['src', 'context']
   }
 
   attributeChangedCallback (name, oldValue, newValue) {
-    if (!this.__initialized) { return; }
+    if (!this.__initialized) { return }
     if (oldValue !== newValue) {
       this[name] = newValue;
     }
   }
 
-  get src () { return this.getAttribute('src'); }
+  get src () { return this.getAttribute('src') }
   set src (value) {
     this.setAttribute('src', value);
     this.setSrc();
     this.render();
   }
 
-  get context () { return this.getAttribute('context'); }
+  get context () { return this.getAttribute('context') }
   set context (value) {
     this.setAttribute('context', value);
     this.setContext();
@@ -88,8 +88,8 @@ class WCTemplate extends HTMLElement {
 
   async fetchSrc (src) {
     const response = await fetch(src);
-    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`);
-    return response.text();
+    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`)
+    return response.text()
   }
 
   async setContext () {
@@ -99,8 +99,8 @@ class WCTemplate extends HTMLElement {
 
   async fetchContext (src) {
     const response = await fetch(src);
-    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`);
-    return response.json();
+    if (response.status !== 200) throw Error(`ERR ${response.status}: ${response.statusText}`)
+    return response.json()
   }
 
   render () {
