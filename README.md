@@ -1,4 +1,4 @@
-<h1 align="center">&lt;wc-template&gt;: Tagged Template Literals in HTML</h1>
+<h1 align="center">&lt;wc-template&gt; Tagged Template Literals in HTML</h1>
 
 <div align="center">
   <a href="https://github.com/vanillawc/wc-template/releases"><img src="https://badgen.net/github/tag/vanillawc/wc-template" alt="GitHub Releases"></a>
