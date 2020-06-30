@@ -4,10 +4,11 @@
   <a href="https://github.com/vanillawc/wc-template/releases"><img src="https://badgen.net/github/tag/vanillawc/wc-template" alt="GitHub Releases"></a>
   <a href="https://www.npmjs.com/package/@vanillawc/wc-template"><img src="https://badgen.net/npm/v/@vanillawc/wc-template" alt="NPM Releases"></a>
   <a href="https://bundlephobia.com/result?p=@vanillawc/wc-template"><img src="https://badgen.net/bundlephobia/minzip/@vanillawc/wc-template" alt="Bundlephobia"></a>
-  <a href="https://raw.githubusercontent.com/vanillawc/wc-template/master/LICENSE"><img src="https://badgen.net/github/license/vanillawc/wc-template" alt="MIT License"></a>
-  <a href="https://www.webcomponents.org/element/vanillawc/wc-template"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
   <a href="https://github.com/vanillawc/wc-template/actions"><img src="https://github.com/vanillawc/wc-template/workflows/Latest/badge.svg" alt="Latest Status"></a>
   <a href="https://github.com/vanillawc/wc-template/actions"><img src="https://github.com/vanillawc/wc-template/workflows/Release/badge.svg" alt="Release Status"></a>
+
+  <a href="https://discord.gg/8ur9M5"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>z
+  <a href="https://www.webcomponents.org/element/vanillawc/wc-template"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
 </div>
 
 ## Installation
@@ -24,7 +25,7 @@ npm i @vanillawc/wc-template
 
 *Import from CDN*
 ```html
-<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-template/index.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/gh/vanillawc/wc-template@1/index.js"></script>
 ```
 
 ## Demo
@@ -51,3 +52,7 @@ If the template is a tagged template literal, context can be provided via an ext
 ```html
 <wc-template src="sample2.html" theme="context.json"></wc-template>
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](https://github.com/vanillawc/vanillawc/blob/main/CONTRIBUTING.md)
