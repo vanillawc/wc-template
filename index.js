@@ -8,7 +8,7 @@ function interpolate(template, tags = {}) {
     throw new TemplateException(template, tags, e);
   }
 }
-class TemplateException extends Error {
+var TemplateException = class extends Error {
   constructor(template, tags, message) {
     super();
     this.name = "TemplateError";
@@ -20,10 +20,10 @@ class TemplateException extends Error {
     msg += message;
     this.message = msg;
   }
-}
+};
 
 // src/wc-template.js
-class WCTemplate extends HTMLElement {
+var WCTemplate = class extends HTMLElement {
   static get observedAttributes() {
     return ["src", "context"];
   }
@@ -90,7 +90,7 @@ class WCTemplate extends HTMLElement {
   render() {
     this.innerHTML = interpolate(this.__template, this.__context);
   }
-}
+};
 customElements.define("wc-template", WCTemplate);
 export {
   WCTemplate
