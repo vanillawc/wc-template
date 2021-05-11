@@ -1,5 +1,5 @@
 /* eslint no-undef: 0 */
-import Interpolate from '../node_modules/@vanillaes/interpolate/index.js'
+import { interpolate } from '../node_modules/@vanillaes/interpolate/index.js'
 
 export class WCTemplate extends HTMLElement {
   static get observedAttributes () {
@@ -70,7 +70,7 @@ export class WCTemplate extends HTMLElement {
   }
 
   render () {
-    this.innerHTML = Interpolate(this.__template, this.__context)
+    this.innerHTML = interpolate(this.__template, this.__context)
   }
 }
 
