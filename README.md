@@ -7,7 +7,7 @@
   <a href="https://github.com/vanillawc/wc-template/actions"><img src="https://github.com/vanillawc/wc-template/workflows/Latest/badge.svg" alt="Latest Status"></a>
   <a href="https://github.com/vanillawc/wc-template/actions"><img src="https://github.com/vanillawc/wc-template/workflows/Release/badge.svg" alt="Release Status"></a>
 
-  <a href="https://discord.gg/8ur9M5"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>z
+  <a href="https://discord.gg/aSWYgtybzV"><img alt="Discord" src="https://img.shields.io/discord/723296249121603604?color=%23738ADB"></a>
   <a href="https://www.webcomponents.org/element/vanillawc/wc-template"><img src="https://img.shields.io/badge/webcomponents.org-published-blue.svg" alt="Published on WebComponents.org"></a>
 </div>
 
